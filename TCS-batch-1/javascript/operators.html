@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let x = 5; //assignment operator
+            y = 6;
+           /* x += y // x=x+y
+            x -= y // x = x-y
+            x *= y // x = x*y
+            x /= y // x = x/y
+            x %= y // x = x%y */
+            //arthematic operator returns results
+            r1 = x + y;
+            r2 = x - y;
+            r3 = x * y;
+            r4 = x / y;
+            r5 = x % y;
+            r6 = ++x;
+            r7 = --x;
+            function fun()
+            {
+            document.getElementById("r1").innerHTML = "sum of values x = 5, x = 6 is : " + r1;
+            document.getElementById("r2").innerHTML = "sub of values x = 5, x = 6 is : " + r2;
+            document.getElementById("r3").innerHTML = "Mul of values x = 5, x = 6 is : " + r3;
+            document.getElementById("r4").innerHTML = "div of values x = 5, x = 6 is : " + r4;
+            document.getElementById("r5").innerHTML = "Mod of values x = 5, x = 6 is : " + r5;
+            document.getElementById("r6").innerHTML = "increment of values x = 5, x = 6 is : " + r6;
+            document.getElementById("r7").innerHTML = "decreement of values x = 5, x = 6 is : " + r7;
+            }
+
+            //comparision operator  returns T/F
+            c1 =  x==y;
+            c2 = x < y;
+            c3 = x > y;
+            c4 = x <= y;
+            c5 = x >= y;
+            c6 = x != y;
+            //logical operator
+            l1 = (10==20 || 20==33) ; //F
+            l2 = (10==20 && 20==33); //F
+            //string operators
+            let t1 = "John";
+            let t2 = "Doe";
+            let t3 = t1 + " " + t2; // john doe
+            t1 += "nice day";
+            //adding string and numbers
+            var n = 5 + 5;  //10
+            var vn = "5" + 5;   //55
+            var vn1 = "hello" + 5;  //hello5
+        </script>
+    </head>
+    <body>
+        <h1>demo of operators</h1>
+        <p>Arthematic operators</p>
+        <p id="r1"></p>
+        <p id="r2"></p>
+        <p id="r3"></p>
+        <p id="r4"></p>
+        <p id="r5"></p>
+        <p id="r6"></p>
+        <p id="r7"></p>
+       <button type="button" onclick="fun()">click me to see arthematic results</button>
+
+        
+    </body>
+</html>
