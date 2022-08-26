@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> java script data types</h2><hr>
+        <p id="demo"></p><hr>
+        <p id="demo1"></p><hr>
+        <h2>number datatype</h2>
+        <p id="demo2"></p>
+        <p id="demo3"></p><hr>
+        <h2>Object datatype</h2>
+        <p id="demo4"></p>
+        <p id="demo5"></p><hr>
+        <p id="demo6"></p>
+        <p id="demo7"></p><hr>
+        <script>
+            let x; //undefined
+            x = 5; //Number
+           // x = "John"; //string
+            document.getElementById("demo").innerHTML = " the value of x: " + x;
+            document.getElementById("demo1").innerHTML = "type of x: " + typeof x;
+            y = 10.66;
+            z = 123e5;
+            document.getElementById("demo2").innerHTML = " the value of y: " + z;
+            document.getElementById("demo3").innerHTML = "type of y: " + typeof z;
+            const cars =["Volvo","BMW","XUV"];
+            document.getElementById("demo4").innerHTML = " the value of cars: " + cars;
+            document.getElementById("demo5").innerHTML = "type of cars: " + typeof cars;
+            const person = {fname:"John",age:50,eyecolor:"blue"}
+            document.getElementById("demo6").innerHTML = " the value of person: " + person.age;
+            document.getElementById("demo7").innerHTML = "type of person: " + typeof person;
+        </script>
+    </body>
+</html>
