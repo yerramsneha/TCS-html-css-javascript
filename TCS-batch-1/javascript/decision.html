@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>decision</h2>
+        <p id="demo"></p>
+        <hr>
+        <h2>switch-case</h2>
+        <p id="demo1"></p>
+        <script>
+            time = 9;
+            if(time < 10)
+            {
+                document.getElementById("demo").innerHTML = "Good Morning!!";
+            } else if(time < 20)
+            {
+                document.getElementById("demo").innerHTML = "Good day!!";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Good evening!!";
+            }
+           
+            n = 9;
+            switch (n) {
+                case 9:
+                    document.getElementById("demo1").innerHTML = "number is nine";
+                    break;
+                case 10:
+                    document.getElementById("demo1").innerHTML = "number is 10";
+                    break;
+                case 15:
+                    document.getElementById("demo1").innerHTML = "number is 15";
+                   break;
+                default: 
+                    document.getElementById("demo1").innerHTML = "number is unknown";
+            }
+        </script>
+    </body>
+</html>

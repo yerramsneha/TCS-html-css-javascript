@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>javascript arrays</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <script>
+            a1 = ["saab","Volvo","BMW"];
+            b1 = "saab,Volvo,BMW";
+            a2 = [
+                "MAngo",
+                "Apple",
+                "Orange"
+                ];
+                document.getElementById("demo").innerHTML = typeof a1;
+                document.getElementById("demo1").innerHTML = a1[1];
+                document.getElementById("demo2").innerHTML = typeof a1.toString();
+            a2.push("Kiwi");
+            document.getElementById("demo3").innerHTML = a2;
+            a3 = a2.pop();
+            document.getElementById("demo4").innerHTML = a3;
+            document.getElementById("demo5").innerHTML = b1.concat(a2);
+
+
+        </script>
+    </body>
+</html>

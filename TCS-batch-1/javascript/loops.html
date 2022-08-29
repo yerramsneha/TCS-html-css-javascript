@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>java script loops</h2>
+        <p id="demo"></p>
+        <hr>
+        <h2>for in loop</h2>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <hr>
+        <h2>while loop</h2>
+        <p id="demo3"></p>
+        <script>
+            t = "";
+            for (i=0;i<5;i++)
+            {
+                t += "the number is " + i + "<br>";
+            }
+            document.getElementById("demo").innerHTML = t;
+
+
+            numbers = [45,4,6,8,9,46];
+            let t1="";
+            for (x in numbers)
+            {
+                t1 += numbers[x];
+            }
+            document.getElementById("demo1").innerHTML = t1;
+
+            var t2 ="";
+            numbers.forEach(myfun);
+            document.getElementById("demo2").innerHTML = t2;
+
+            function myfun(value,index)
+            {
+                t2 += index+ ": "+value + "<br>";
+            }
+
+            t3 ="";
+            i = 0;
+            while(i<10)
+            {
+                t3 += "<br> the number is " +  i;
+                i++;
+            }
+            document.getElementById("demo3").innerHTML = t3
+
+
+
+
+        </script>
+    </body>
+</html>
